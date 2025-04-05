@@ -20,5 +20,14 @@ namespace todolist
         public TaskStatus status;
 
 
+        public Tarefa(int id, string description, TaskStatus? status = TaskStatus.PENDING)
+        {
+            this.id = id;
+            this.description = description;
+            this.status = status ?? TaskStatus.PENDING;
+            this.creationDate = DateTime.Now;
+        }
+
+
     }
 }

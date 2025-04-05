@@ -16,6 +16,14 @@ namespace todolist
         public List<Tarefa> tasks { get; set; } = new List<Tarefa>();
 
 
+        public User() { }
+
+        public User(string nome, int id) {
+            this.name = nome;
+            this.id = id;
+        }
+
+
 
 
     }
